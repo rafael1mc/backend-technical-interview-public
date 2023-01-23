@@ -4,7 +4,7 @@ type Entity interface {
 	GetID() int
 	GetLeague() string
 	GetEntityType() string
-	SetStats(Stats)
+	// SetStats(Stats)
 
 	CalculateFpts() float64
 }

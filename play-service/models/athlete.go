@@ -12,6 +12,20 @@ type NFLAthlete struct {
 	Athlete
 }
 
+func (a Athlete) GetID() int {
+	return a.ID
+}
+func (a Athlete) GetLeague() string {
+	return a.League
+}
+func (a Athlete) GetEntityType() string {
+	return a.Stats.GetEntityType()
+}
+
+// func (a Athlete) SetStats(Stats) {
+// 	return a.
+// }
+
 func (nfl *NFLAthlete) CalculateFpts() float64 {
 	stats := nfl.Stats.(*NFLStats)
 

@@ -1,0 +1,9 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/rafael/backend-technical-interview-public/entity-service'
+migrate create -ext sql -dir migrations -seq 
+make: Leaving directory '/home/rafael/backend-technical-interview-public/entity-service'
+ 
+Makefile:2: .env: No such file or directory
+make: *** No rule to make target '.env'.
+make: Failed to remake makefile '.env'.
+

@@ -12,6 +12,16 @@ type BaseStats struct {
 	EntityType string `json:"entityType" db:"entity_type"`
 }
 
+func (s BaseStats) GetID() string {
+	return s.ID
+}
+func (s BaseStats) GetEntityID() int {
+	return s.EntityID
+}
+func (s BaseStats) GetEntityType() string {
+	return s.EntityType
+}
+
 type NFLStats struct {
 	BaseStats
 	FieldGoalsMade int `json:"fieldGoalsMade" db:"field_goals_made"`

@@ -5,5 +5,5 @@ type Entity interface {
 	GetLeague() string
 	SetStats(Stats)
 
-	MarshalJSON() ([]byte, error)
+	// MarshalJSON() ([]byte, error)
 }
